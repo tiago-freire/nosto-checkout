@@ -1,7 +1,7 @@
 {
   "name": "nosto-checkout",
   "vendor": "ssesandbox04",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "title": "Nosto Checkout",
   "description": "Provides Nosto placements management (https://nosto.com) on checkout.",
   "scripts": {
@@ -41,9 +41,7 @@
   },
   "billingOptions": {
     "type": "free",
-    "availableCountries": [
-      "*"
-    ]
+    "availableCountries": ["*"]
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
