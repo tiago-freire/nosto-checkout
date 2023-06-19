@@ -1,0 +1,49 @@
+{
+  "name": "nosto-checkout",
+  "vendor": "ssesandbox04",
+  "version": "0.0.0",
+  "title": "Nosto Checkout",
+  "description": "Provides Nosto placements management (https://nosto.com) on checkout.",
+  "scripts": {
+    "postreleasy": "vtex publish"
+  },
+  "dependencies": {
+    "vtex.render-runtime": "8.x",
+    "vtex.apps-graphql": "3.x"
+  },
+  "builders": {
+    "node": "6.x"
+  },
+  "settingsSchema": {
+    "title": "Nosto Checkout",
+    "type": "object",
+    "properties": {
+      "nostoAccountID": {
+        "title": "Nosto Account ID",
+        "type": "string"
+      },
+      "enableNosto": {
+        "title": "Enable Nosto on Checkout",
+        "description": "If disabled, Nosto will not be loaded and placements will not be created on checkout.",
+        "type": "boolean"
+      },
+      "belowCartPlacementId": {
+        "title": "Placement below cart",
+        "description": "Nosto placement ID for area below checkout cart. If empty, the placement will not be created.",
+        "type": "string"
+      },
+      "belowSummaryPlacementId": {
+        "title": "Placement below summary",
+        "description": "Nosto placement ID for area below checkout summary. If empty, the placement will not be created.",
+        "type": "string"
+      }
+    }
+  },
+  "billingOptions": {
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

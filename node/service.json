@@ -1,0 +1,20 @@
+{
+  "memory": 1024,
+  "ttl": 300,
+  "timeout": 60,
+  "minReplicas": 8,
+  "maxReplicas": 80,
+  "workers": 1,
+  "routes": {
+    "settings": {
+      "path": "/_v/nosto-checkout/settings",
+      "public": true,
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": ["get"]
+        }
+      ]
+    }
+  }
+}
