@@ -1,7 +1,7 @@
 {
   "name": "nosto-checkout",
   "vendor": "ssesandbox04",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Nosto Settings",
   "description": "Nosto (https://nosto.com) placements management  service.",
   "scripts": {

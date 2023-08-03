@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.0.2] - 2023-08-02
+
 ### Changed
 - Rename settings schema titles and descriptions.
 
