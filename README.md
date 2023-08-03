@@ -1,2 +1,2 @@
 # Nosto Checkout
-Provides Nosto placements management (https://nosto.com) on checkout.
+Provides a [Nosto](https://nosto.com) placements management service.

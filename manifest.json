@@ -2,8 +2,8 @@
   "name": "nosto-checkout",
   "vendor": "ssesandbox04",
   "version": "0.0.1",
-  "title": "Nosto Checkout",
-  "description": "Provides Nosto placements management (https://nosto.com) on checkout.",
+  "title": "Nosto Settings",
+  "description": "Nosto (https://nosto.com) placements management  service.",
   "scripts": {
     "postreleasy": "vtex publish"
   },
@@ -15,25 +15,25 @@
     "node": "6.x"
   },
   "settingsSchema": {
-    "title": "Nosto Checkout",
+    "title": "Nosto Settings",
     "type": "object",
     "properties": {
+      "enableNosto": {
+        "title": "Enable Nosto",
+        "description": "If disabled, Nosto will not be loaded and all store placements will not be created.",
+        "type": "boolean"
+      },
       "nostoAccountID": {
         "title": "Nosto Account ID",
         "type": "string"
       },
-      "enableNosto": {
-        "title": "Enable Nosto on Checkout",
-        "description": "If disabled, Nosto will not be loaded and placements will not be created on checkout.",
-        "type": "boolean"
-      },
       "belowCartPlacementId": {
-        "title": "Placement below cart",
+        "title": "Placement below checkout cart",
         "description": "Nosto placement ID for area below checkout cart. If empty, the placement will not be created.",
         "type": "string"
       },
       "belowSummaryPlacementId": {
-        "title": "Placement below summary",
+        "title": "Placement below checkout summary",
         "description": "Nosto placement ID for area below checkout summary. If empty, the placement will not be created.",
         "type": "string"
       }
